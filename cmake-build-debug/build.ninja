@@ -52,14 +52,16 @@ build cmake_object_order_depends_target_AXorPlus: phony || .
 build CMakeFiles/AXorPlus.dir/src/main.cpp.obj: CXX_COMPILER__AXorPlus_unscanned_Debug D$:/code/clion/C++/AXorPlus/src/main.cpp || cmake_object_order_depends_target_AXorPlus
   DEP_FILE = CMakeFiles\AXorPlus.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  INCLUDES = -ID:/code/clion/C++/AXorPlus/include
   OBJECT_DIR = CMakeFiles\AXorPlus.dir
   OBJECT_FILE_DIR = CMakeFiles\AXorPlus.dir\src
 
-build CMakeFiles/AXorPlus.dir/inc/AXorPlus.cpp.obj: CXX_COMPILER__AXorPlus_unscanned_Debug D$:/code/clion/C++/AXorPlus/inc/AXorPlus.cpp || cmake_object_order_depends_target_AXorPlus
-  DEP_FILE = CMakeFiles\AXorPlus.dir\inc\AXorPlus.cpp.obj.d
+build CMakeFiles/AXorPlus.dir/src/AXorPlus.cpp.obj: CXX_COMPILER__AXorPlus_unscanned_Debug D$:/code/clion/C++/AXorPlus/src/AXorPlus.cpp || cmake_object_order_depends_target_AXorPlus
+  DEP_FILE = CMakeFiles\AXorPlus.dir\src\AXorPlus.cpp.obj.d
   FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  INCLUDES = -ID:/code/clion/C++/AXorPlus/include
   OBJECT_DIR = CMakeFiles\AXorPlus.dir
-  OBJECT_FILE_DIR = CMakeFiles\AXorPlus.dir\inc
+  OBJECT_FILE_DIR = CMakeFiles\AXorPlus.dir\src
 
 
 # =============================================================================
@@ -67,15 +69,15 @@ build CMakeFiles/AXorPlus.dir/inc/AXorPlus.cpp.obj: CXX_COMPILER__AXorPlus_unsca
 
 
 #############################################
-# Link the executable AXorPlus.exe
+# Link the executable D:\code\clion\C++\AXorPlus\bin\AXorPlus.exe
 
-build AXorPlus.exe: CXX_EXECUTABLE_LINKER__AXorPlus_Debug CMakeFiles/AXorPlus.dir/src/main.cpp.obj CMakeFiles/AXorPlus.dir/inc/AXorPlus.cpp.obj
+build D$:/code/clion/C++/AXorPlus/bin/AXorPlus.exe: CXX_EXECUTABLE_LINKER__AXorPlus_Debug CMakeFiles/AXorPlus.dir/src/main.cpp.obj CMakeFiles/AXorPlus.dir/src/AXorPlus.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\AXorPlus.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = AXorPlus.exe
+  TARGET_FILE = D:\code\clion\C++\AXorPlus\bin\AXorPlus.exe
   TARGET_IMPLIB = libAXorPlus.dll.a
   TARGET_PDB = AXorPlus.exe.dbg
 
@@ -105,7 +107,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build AXorPlus: phony AXorPlus.exe
+build AXorPlus: phony D$:/code/clion/C++/AXorPlus/bin/AXorPlus.exe
+
+build AXorPlus.exe: phony D$:/code/clion/C++/AXorPlus/bin/AXorPlus.exe
 
 # =============================================================================
 # Folder targets.
@@ -115,7 +119,7 @@ build AXorPlus: phony AXorPlus.exe
 #############################################
 # Folder: D:/code/clion/C++/AXorPlus/cmake-build-debug
 
-build all: phony AXorPlus.exe
+build all: phony D$:/code/clion/C++/AXorPlus/bin/AXorPlus.exe
 
 # =============================================================================
 # Built-in targets
