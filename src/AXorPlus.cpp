@@ -17,6 +17,7 @@ bool AXorPlus::XOR2File(const std::string &filename, const std::string &outputFi
     inputFile.open(filename, std::ios::binary);
     if (!inputFile.is_open())
     {
+        std::cout<<"Error opening file "<<filename<<std::endl;
         return false;
     }
     auto inputString = std::string((std::istreambuf_iterator<char>(inputFile)), std::istreambuf_iterator<char>());
@@ -25,6 +26,7 @@ bool AXorPlus::XOR2File(const std::string &filename, const std::string &outputFi
     outputFile.open(outputFilename, std::ios::binary);
     if (!outputFile.is_open())
     {
+        std::cout<<"Error opening file "<<outputFilename<<std::endl;
         return false;
     }
     if (0 == mode)
@@ -54,11 +56,10 @@ bool AXorPlus::XOR2File(const std::string &filename, const std::string &outputFi
             xorString += inputString[i] ^ keyString[i % keyString.size()];
         }
         outputFile << xorString;
-
-        inputFile.close();
         keyFile.close();
-        outputFile.close();
     }
+    inputFile.close();
+    outputFile.close();
 
     return true;
 }

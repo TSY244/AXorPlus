@@ -9,6 +9,6 @@ int main(int argc, char **argv){
         return 1;
     }
     // default mode is 1
-    xorPlus.XOR2File(argv[1], argv[2], argv[3],1);
+    xorPlus.XOR2File(argv[1], argv[2], argv[3], std::stoi(argv[4]));
 
 }

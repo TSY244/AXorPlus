@@ -1,3 +1,3 @@
-D:/code/clion/C++/AXorPlus/cmake-build-debug/CMakeFiles/AXorPlus.dir
-D:/code/clion/C++/AXorPlus/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/code/clion/C++/AXorPlus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/august/code/cpp/AXorPlus/cmake-build-debug/CMakeFiles/AXorPlus.dir
+/Users/august/code/cpp/AXorPlus/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/august/code/cpp/AXorPlus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
